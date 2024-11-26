@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit Dish{% endblock %}
+
+{% block body %}
+    <br>
+    <div class="container">
+
+
+    <h2>Edit Dish</h2>
+
+    {{ form_start(editForm) }}
+    {{ form_widget(editForm) }}
+        <br>
+    <button type="submit" class="btn btn-primary">Update Dish</button>
+    {{ form_end(editForm) }}
+        <br>
+
+    <a href="{{ path('dish.edit') }}" class="btn btn-secondary">Back to list</a>
+    </div>
+{% endblock %}
+
