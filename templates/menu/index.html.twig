@@ -14,10 +14,10 @@
 			</div>
 			<div class="container">
 				<ul class="playlist-filter controls">
-					<li class="control" data-filter=".Drink">Drink</li>
-					<li class="control" data-filter=".Starter">Starter</li>
-					<li class="control" data-filter=".Main Course">Main Course</li>
-					<li class="control" data-filter=".Dessert">Dessert</li>
+					<li class="control" data-filter=".Drink">Drinks</li>
+					<li class="control" data-filter=".Starter">Starters</li>
+					<li class="control" data-filter=".Main">Main Courses</li>
+					<li class="control" data-filter=".Dessert">Desserts</li>
 					<li class="control" data-filter="all">All Dishes</li>
 				</ul>
 			</div>
@@ -30,7 +30,8 @@
 					<div class="playlist-item">
 						<img src="{{ asset('images/' ~ dish.image) }}" alt="">
 						<h5>{{ dish.description }} - EUR {{ dish.price }}</h5>
-						<p>Order Nr. {{ dish.id }}
+						<br>
+						<p>
 							<a class="btn btn-outline-danger btn-sm" href="{{path('order', {id: dish.id}) }}"
 							role="button">Order</a>
 						</p>
